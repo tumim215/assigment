@@ -11,7 +11,7 @@ public class DLL {
        
         Node(int d) { data = d; }
     }
-    public void push(int new_data)
+    public void add(int new_data)
     {
         Node new_Node = new Node(new_data);
         new_Node.next = head;
@@ -51,10 +51,10 @@ public class DLL {
     public static void main(String[] args)
     {
         DLL dll = new DLL();
-        dll.push(2);
-        dll.push(4);
-        dll.push(8);
-        dll.push(10);
+        dll.add(2);
+        dll.add(4);
+        dll.add(8);
+        dll.add(10);
         System.out.print("Created DLL is: ");
         dll.printlist(dll.head);
         dll.deleteNode(dll.head);
